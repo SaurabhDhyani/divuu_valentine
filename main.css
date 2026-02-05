@@ -50,13 +50,13 @@ body{
     box-sizing:border-box;
     } */
  
-    .heart{
+    /* .heart{
     position:absolute;
     font-size:40px;
     cursor:pointer;
     animation:fall linear;
     z-index:999;
-    }
+    } */
     
     @keyframes fall{
     from{top:-50px;}
@@ -257,7 +257,7 @@ body{
     animation:pop .5s ease;
     }
 
-    .heart, .blush, .fun{
+    /* .heart, .blush, .fun{
     position:fixed;
     bottom:-40px;
     pointer-events:none;
@@ -274,7 +274,18 @@ body{
     transform:translateY(-110vh);
     opacity:0;
     }
+    } */
+
+    .heart,.blush,.fun{
+    position:absolute;
+    animation:float 5s linear infinite;
     }
+    
+    @keyframes float{
+    0%{bottom:-10px;}
+    100%{bottom:100vh;}
+    }
+
 
 
 
