@@ -69,7 +69,8 @@ yes.onclick=()=>{
 audio.play();
 setTimeout(()=>{
 window.location="celebrate.html";
-},1000);
+},15000);
 };
+
 
 
