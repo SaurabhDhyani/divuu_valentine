@@ -40,9 +40,34 @@ if(gifIndex>=gifs.length) gifIndex=0;
 
 });
 
+// Ambient floating emojis (background vibes)
+setInterval(()=>{
+spawn("❤️","ambient");
+spawn("😊","ambient");
+spawn(["💖","hehe","aww"][Math.floor(Math.random()*3)],"ambient");
+},600);
+
+function spawn(txt,cls){
+let e=document.createElement("div");
+e.className=cls;
+e.innerHTML=txt;
+e.style.left=Math.random()*100+"%";
+e.style.fontSize=Math.random()*20+20+"px";
+document.body.appendChild(e);
+
+e.animate(
+[{transform:"translateY(0)"},{transform:"translateY(100vh)"}],
+{duration:5000}
+);
+
+setTimeout(()=>e.remove(),5000);
+}
+
+
 yes.onclick=()=>{
 audio.play();
 setTimeout(()=>{
 window.location="celebrate.html";
 },1000);
 };
+
