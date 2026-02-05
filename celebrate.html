@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>I Love You Divya ❤️</title>
+<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+<div id="lovePopup">
+<h1>I LOVE YOU DIVYA ❤️</h1>
+</div>
+
+<div class="hug">
+<img src="https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif">
+</div>
+
+<p class="finalText">
+Thank you for choosing me ❤️  
+
+I promise unlimited hugs, silly jokes,  
+and loving you a little more every day 😌  
+
+— Yours, Saurabh
+</p>
+
+<script>
+
+for(let i=0;i<40;i++){
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="💖";
+h.style.left=Math.random()*100+"%";
+h.style.animationDuration=(3+Math.random()*3)+"s";
+document.body.appendChild(h);
+}
+
+setTimeout(()=>{
+alert("Divuu… you are my forever 💖");
+},1500);
+
+setTimeout(()=>{
+window.location="something.html";
+},6000);
+
+</script>
+
+</body>
+</html>
