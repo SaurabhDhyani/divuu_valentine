@@ -40,42 +40,21 @@ if(gifIndex>=gifs.length) gifIndex=0;
 });
 
 // Ambient floating emojis on proposal page (BOTTOM → UP)
-
+// Hearts
 setInterval(()=>{
-spawn("❤️");
-spawn("😊");
-spawn(["💖","🥰","😍"][Math.floor(Math.random()*3)]);
-},600);
+spawn("❤️","heart");
+spawn("😊","blush");
+spawn(["💖","🥰","😍"][Math.floor(Math.random()*4)],"fun");
+},500);
 
-function spawn(txt){
-
+function spawn(txt,cls){
 let e=document.createElement("div");
-e.className="ambient";
+e.className=cls;
 e.innerHTML=txt;
-
-// Random horizontal position
 e.style.left=Math.random()*100+"%";
-
-// Start at bottom
-e.style.bottom="-40px";
-e.style.position="fixed";
-
 e.style.fontSize=Math.random()*20+20+"px";
-
 document.body.appendChild(e);
-
-e.animate(
-[
-{ transform:"translateY(0)", opacity:1 },
-{ transform:"translateY(-110vh)", opacity:0 }
-],
-{
-duration:6000,
-easing:"ease-out"
-}
-);
-
-setTimeout(()=>e.remove(),6000);
+setTimeout(()=>e.remove(),5000);
 }
 
 
@@ -84,6 +63,7 @@ setTimeout(()=>e.remove(),6000);
 yes.onclick=()=>{
 window.location="celebrate.html";
 };
+
 
 
 
