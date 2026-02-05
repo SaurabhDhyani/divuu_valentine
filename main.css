@@ -50,7 +50,7 @@ body{
     box-sizing:border-box;
     } */
  
-    .heartMain{
+    .heart{
     position:absolute;
     font-size:40px;
     cursor:pointer;
@@ -257,7 +257,9 @@ body{
     animation:pop .5s ease;
     }
 
-    .heart, .blush, .fun{
+    /* Ambient floating emojis ONLY for proposal page */
+
+    .ambient{
     position:fixed;
     bottom:-40px;
     pointer-events:none;
@@ -276,15 +278,7 @@ body{
     }
     }
 
-    /* .heart,.blush,.fun{
-    position:absolute;
-    animation:float 5s linear infinite;
-    }
-    
-    @keyframes float{
-    0%{bottom:-10px;}
-    100%{bottom:100vh;}
-    } */
+
 
 
 
