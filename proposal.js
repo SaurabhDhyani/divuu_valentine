@@ -42,34 +42,31 @@ if(gifIndex>=gifs.length) gifIndex=0;
 // Ambient floating emojis (BOTTOM → UP)
 
 setInterval(()=>{
-spawn("❤️","heart");
-spawn("😊","blush");
-spawn(["💖","🥰","😍"][Math.floor(Math.random()*3)],"fun");
-},800);   // slowed down
+spawn("❤️");
+spawn("😊");
+spawn(["💖","🥰","😍"][Math.floor(Math.random()*3)]);
+},800);
 
-function spawn(txt,cls){
+function spawn(txt){
 
 let e=document.createElement("div");
-e.className=cls;
+e.className="ambient";   // NEW CLASS
 e.innerHTML=txt;
 
-// random X
 e.style.left=Math.random()*100+"%";
-
-// random size
 e.style.fontSize=(20+Math.random()*25)+"px";
 
-// add to page
 document.body.appendChild(e);
 
-// remove after animation
 setTimeout(()=>e.remove(),6000);
 }
+
 
 
 yes.onclick=()=>{
 window.location="celebrate.html";
 };
+
 
 
 
