@@ -257,19 +257,26 @@ body{
     animation:pop .5s ease;
     }
 
-    .ambient{
+    .heart, .blush, .fun{
     position:fixed;
-    top:-20px;
+    bottom:-40px;
     pointer-events:none;
-    opacity:.6;
-    animation:float linear;
+    animation:floatUp 6s linear;
     z-index:1;
     }
     
-    @keyframes float{
-    from{transform:translateY(0);}
-    to{transform:translateY(110vh);}
+    @keyframes floatUp{
+    from{
+    transform:translateY(0);
+    opacity:1;
     }
+    to{
+    transform:translateY(-110vh);
+    opacity:0;
+    }
+    }
+
+
 
 
 
