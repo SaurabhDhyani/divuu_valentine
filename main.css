@@ -25,10 +25,19 @@ body{
     box-shadow:0 4px 10px rgba(0,0,0,.2);
     }
     
+    /* #gameScreen{
+    height:100vh;
+    } */
+
     #gameScreen{
     height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:40px;
+    box-sizing:border-box;
     }
-    
+ 
     .heart{
     position:absolute;
     font-size:40px;
@@ -42,7 +51,7 @@ body{
     to{top:110vh;}
     }
     
-    #messageBox{
+    /* #messageBox{
     position:absolute;
     left:50%;
     top:50%;
@@ -54,19 +63,29 @@ body{
     text-align:center;
     box-shadow:0 6px 20px rgba(0,0,0,.25);
     z-index:10;
+    } */
+
+    #messageBox{
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    width:45%;
+    text-align:center;
+    box-shadow:0 6px 20px rgba(0,0,0,.25);
     }
+
     #msgText{
     font-size:26px;
     line-height:1.4;
     }
         
     
-    #gifBox{
+    /* #gifBox{
     position:absolute;
     right:20px;
     top:50%;
     transform:translateY(-50%);
-    }
+    } */
     
     #gifBox img{
     width:280px;
@@ -180,3 +199,4 @@ body{
         
         
         
+
