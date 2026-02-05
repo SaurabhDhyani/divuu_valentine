@@ -4,6 +4,7 @@ body{
     background:linear-gradient(135deg,#ffd6e7,#ffe9f3);
     overflow:hidden;
     }
+    .wrap{margin-top:40px;}
     
     #startScreen{
     height:100vh;
@@ -101,19 +102,36 @@ body{
     margin-bottom:15px;
     }
 
+    /* LOVE POPUP */
+    
     #lovePopup{
-    position:absolute;
-    top:30%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    font-size:40px;
-    color:#ff2d7a;
-    animation:zoom 2s infinite alternate;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    pointer-events:none;
+    transition:1s;
     }
     
-    @keyframes zoom{
-    from{transform:translate(-50%,-50%) scale(1);}
-    to{transform:translate(-50%,-50%) scale(1.1);}
+    #lovePopup.show{
+    opacity:1;
+    pointer-events:auto;
+    }
+    
+    .loveText{
+    font-size:60px;
+    color:#ffb6c1;
+    text-shadow:0 0 20px pink,0 0 40px hotpink;
+    animation:pulse 2s infinite;
+    }
+    
+    @keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.2);}
+    100%{transform:scale(1);}
     }
     
     .hug img{
