@@ -1,7 +1,6 @@
 const no=document.getElementById("no");
 const yes=document.getElementById("yes");
 const gif=document.getElementById("reactGif");
-const audio=document.getElementById("yesAudio");
 
 let texts=[
 "are you sure?",
@@ -66,11 +65,10 @@ setTimeout(()=>e.remove(),5000);
 
 
 yes.onclick=()=>{
-audio.play();
-setTimeout(()=>{
 window.location="celebrate.html";
-},15000);
 };
+
+
 
 
 
