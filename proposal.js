@@ -14,11 +14,11 @@ let texts=[
 ];
 
 let gifs=[
-"https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3lhY2xoaHN2cjRhY2F0Z2k5c3Bkam9nMWFhcDB3NGxldG92ZWl2biZlcD12MV9naWZzX3NlYXJjaCZjdD1n/901mxGLGQN2PyCQpoc/giphy.gif",
-"https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmwybTdmYmQ1NDd6eWZrYzhsc2thaDNqa2JscXUzZWMwaHk5M3ZlbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/mi4ec226vjAkehSLk0/giphy.gif",
-"https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWduZXNqY2lsMHFmejYyaHA3bXBkb21mY2Eybmg2OHF1cWJ6aGFmdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/EhmTZVtUAiddGVhfTP/giphy.gif",
-"https://tenor.com/tMyhWVXe05H.gif",
-"https://tenor.com/nldhlZ9LXIz.gif"
+"assets/gifs/1.gif",
+"assets/gifs/2.gif",
+"assets/gifs/3.gif",
+"assets/gifs/4.gif",
+"assets/gifs/5.gif"
 ];
 
 let gifIndex=0;
