@@ -5,6 +5,15 @@ body{
     overflow:hidden;
     }
     .wrap{margin-top:40px;}
+
+    .wrapIndex{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:80px;
+    }
+
     
     #startScreen{
     height:100vh;
@@ -199,6 +208,7 @@ body{
 
         
     
+
 
 
 
