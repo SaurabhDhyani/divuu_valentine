@@ -12,16 +12,16 @@ let messages=[
     ];
     
     let gifs=[
-        "https://tenor.com/bxZUiKkI4sJ.gif",
-        "https://tenor.com/biu4r.gif",
-        "https://tenor.com/dSsrPRJ8uXB.gif",
-        "https://tenor.com/bAlzx.gif",
-        "https://tenor.com/f2ZszDsgZ89.gif",
-        "https://tenor.com/pV2Fw2slQ1l.gif",
-        "https://tenor.com/jGNURdg1KdY.gif",
-        "https://tenor.com/l8Jgd2zjYp5.gif",
-        "https://tenor.com/b0rfY.gif",
-        "https://tenor.com/suOLUlC9CYE.gif"
+        "assets/gifs/g1.gif",
+        "assets/gifs/g2.gif",
+        "assets/gifs/g3.gif",
+        "assets/gifs/g4.gif",
+        "assets/gifs/g5.gif",
+        "assets/gifs/g6.gif",
+        "assets/gifs/g7.gif",
+        "assets/gifs/g8.gif",
+        "assets/gifs/g9.gif",
+        "assets/gifs/g10.gif"
     ];
     
     let count=0;
@@ -39,7 +39,7 @@ let messages=[
     heart.innerHTML="💖";
     
     heart.style.left=Math.random()*85+"%";
-    heart.style.animationDuration="7s";
+    heart.style.animationDuration="15s";
     
     document.getElementById("gameScreen").appendChild(heart);
     
