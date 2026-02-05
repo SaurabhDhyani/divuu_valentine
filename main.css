@@ -256,7 +256,22 @@ body{
     box-shadow:0 8px 25px rgba(0,0,0,.3);
     animation:pop .5s ease;
     }
+
+    .ambient{
+    position:fixed;
+    top:-20px;
+    pointer-events:none;
+    opacity:.6;
+    animation:float linear;
+    z-index:1;
+    }
     
+    @keyframes float{
+    from{transform:translateY(0);}
+    to{transform:translateY(110vh);}
+    }
+
+
 
 
 
