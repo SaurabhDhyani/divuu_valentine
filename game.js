@@ -35,7 +35,7 @@ let messages=[
     function dropHeart(){
 
     let heart=document.createElement("div");
-    heart.className="heartMain";
+    heart.className="heart";
     heart.innerHTML="💖";
     
     heart.style.left=Math.random()*85+"%";
@@ -72,4 +72,5 @@ let messages=[
     }
     }
     
+
 
