@@ -6,14 +6,6 @@ body{
     }
     .wrap{margin-top:40px;}
 
-    .wrapIndex{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:80px;
-    }
-
     
     #startScreen{
     height:100vh;
@@ -34,18 +26,29 @@ body{
     box-shadow:0 4px 10px rgba(0,0,0,.2);
     }
     
-    /* #gameScreen{
-    height:100vh;
-    } */
-
     #gameScreen{
+    position:relative;
+    height:100vh;
+    }
+
+    #gameUI{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display:flex;
+    align-items:center;
+    gap:60px;
+    }
+
+    /* #gameScreen{
     height:100vh;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:40px;
     box-sizing:border-box;
-    }
+    } */
  
     .heart{
     position:absolute;
@@ -75,10 +78,10 @@ body{
     } */
 
     #messageBox{
+    width:420px;
     background:white;
     padding:30px;
     border-radius:25px;
-    width:45%;
     text-align:center;
     box-shadow:0 6px 20px rgba(0,0,0,.25);
     }
@@ -98,8 +101,9 @@ body{
     } */
 
     #gifBox{
+    width:300px;
     display:flex;
-    align-items:center;
+    justify-content:center;
     }
 
     
@@ -215,6 +219,7 @@ body{
 
         
     
+
 
 
 
