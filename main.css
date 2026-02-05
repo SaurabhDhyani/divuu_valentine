@@ -33,6 +33,7 @@ body{
     font-size:40px;
     cursor:pointer;
     animation:fall linear;
+    z-index:999;
     }
     
     @keyframes fall{
