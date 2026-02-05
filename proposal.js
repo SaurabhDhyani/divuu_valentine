@@ -39,30 +39,38 @@ if(gifIndex>=gifs.length) gifIndex=0;
 
 });
 
-// Ambient floating emojis on proposal page (BOTTOM → UP)
-// Hearts
+// Ambient floating emojis (BOTTOM → UP)
+
 setInterval(()=>{
 spawn("❤️","heart");
 spawn("😊","blush");
-spawn(["💖","🥰","😍"][Math.floor(Math.random()*4)],"fun");
-},500);
+spawn(["💖","🥰","😍"][Math.floor(Math.random()*3)],"fun");
+},800);   // slowed down
 
 function spawn(txt,cls){
+
 let e=document.createElement("div");
 e.className=cls;
 e.innerHTML=txt;
+
+// random X
 e.style.left=Math.random()*100+"%";
-e.style.fontSize=Math.random()*20+20+"px";
+
+// random size
+e.style.fontSize=(20+Math.random()*25)+"px";
+
+// add to page
 document.body.appendChild(e);
-setTimeout(()=>e.remove(),5000);
+
+// remove after animation
+setTimeout(()=>e.remove(),6000);
 }
-
-
 
 
 yes.onclick=()=>{
 window.location="celebrate.html";
 };
+
 
 
 
