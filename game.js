@@ -33,25 +33,27 @@ let messages=[
     }
     
     function dropHeart(){
+
     let heart=document.createElement("div");
     heart.className="heart";
     heart.innerHTML="💖";
-    heart.style.left=Math.random()*90+"%";
-    heart.style.animationDuration="4s";
     
-    document.body.appendChild(heart);
+    heart.style.left=Math.random()*85+"%";
+    heart.style.animationDuration="7s";
     
-    heart.onclick=function(){
+    document.getElementById("gameScreen").appendChild(heart);
+    
+    heart.addEventListener("click",()=>{
     showMessage();
     heart.remove();
-    };
+    });
     
     heart.addEventListener("animationend",()=>{
     heart.remove();
     dropHeart();
     });
     
-    }
+    }        
     
     function showMessage(){
     document.getElementById("msgText").innerText=messages[count];
