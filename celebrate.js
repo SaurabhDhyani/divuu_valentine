@@ -1,3 +1,9 @@
+
+window.onload=()=>{
+let music=document.getElementById("bgMusic");
+music.play().catch(()=>{});
+};
+
 // Floating hearts
 setInterval(()=>{
     let h=document.createElement("div");
@@ -37,4 +43,5 @@ setInterval(()=>{
     
     setTimeout(()=>{
     window.location="something.html";
+
     },15000);
