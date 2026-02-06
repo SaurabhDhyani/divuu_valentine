@@ -1,3 +1,14 @@
+window.onload=()=>{
+
+const music=document.getElementById("proposalMusic");
+music.loop=true;
+music.volume=0.6;
+
+music.play().catch(()=>{});
+
+};
+
+
 const no=document.getElementById("no");
 const yes=document.getElementById("yes");
 const gif=document.getElementById("reactGif");
@@ -66,6 +77,7 @@ setTimeout(()=>e.remove(),6000);
 yes.onclick=()=>{
 window.location="celebrate.html";
 };
+
 
 
 
