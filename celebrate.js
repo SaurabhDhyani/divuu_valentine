@@ -5,15 +5,28 @@ music.play().catch(()=>{});
 };
 
 // Floating hearts
-setInterval(()=>{
+// setInterval(()=>{
+//     let h=document.createElement("div");
+//     h.className="heart";
+//     h.innerHTML="💖";
+//     h.style.left=Math.random()*100+"%";
+//     h.style.fontSize=Math.random()*30+20+"px";
+//     document.body.appendChild(h);
+//     setTimeout(()=>h.remove(),6000);
+//     },300);
+    // Floating hearts bottom → up
+
+    setInterval(()=>{
     let h=document.createElement("div");
-    h.className="heart";
+    h.className="heartscel";
     h.innerHTML="💖";
     h.style.left=Math.random()*100+"%";
-    h.style.fontSize=Math.random()*30+20+"px";
+    h.style.fontSize=(20+Math.random()*30)+"px";
     document.body.appendChild(h);
+    
     setTimeout(()=>h.remove(),6000);
-    },300);
+    },350);
+
     
     // FINAL LOVE POPUP after 3 seconds
     setTimeout(()=>{
@@ -45,3 +58,4 @@ setInterval(()=>{
     window.location="something.html";
 
     },15000);
+
