@@ -71,6 +71,14 @@ let messages=[
     btn.style.display="block";
     }
     }
+
+    const firstMusic=document.getElementById("firstMusic");
+
+    startBtn.onclick=()=>{
+    firstMusic.play().catch(()=>{});
+    };
+
     
+
 
 
