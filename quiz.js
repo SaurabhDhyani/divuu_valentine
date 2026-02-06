@@ -17,7 +17,7 @@ c:1
 {
 q:"Where do I plan to spend the rest of my life",
 a:["Paris","In your heart 💖","Germany","Japan"],
-c:0
+c:1
 },
 {
 q:"Final: Who is always right?",
@@ -137,5 +137,6 @@ load();
     
 //     load();
     
+
 
 
