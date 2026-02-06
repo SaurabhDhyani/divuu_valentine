@@ -26,11 +26,23 @@ let messages=[
     
     let count=0;
     
+    // function startGame(){
+    // document.getElementById("startScreen").style.display="none";
+    // document.getElementById("gameScreen").style.display="block";
+    // dropHeart();
+    // }
+
     function startGame(){
+
+    firstMusic.currentTime = 0;
+    firstMusic.play().catch(()=>{});
+    
     document.getElementById("startScreen").style.display="none";
     document.getElementById("gameScreen").style.display="block";
+    
     dropHeart();
     }
+
     
     function dropHeart(){
 
@@ -79,6 +91,7 @@ let messages=[
     };
 
     
+
 
 
 
