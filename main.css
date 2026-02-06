@@ -278,6 +278,38 @@ body{
     }
     }
 
+    /* Celebrate floating hearts */
+
+.heartscel{
+position:fixed;
+bottom:-40px;
+animation:rise 6s linear;
+pointer-events:none;
+z-index:2;
+}
+
+@keyframes rise{
+from{
+transform:translateY(0);
+opacity:1;
+}
+to{
+transform:translateY(-110vh);
+opacity:0;
+}
+}
+
+/* Celebrate heading */
+
+.wrap h1{
+font-size:48px;
+text-align:center;
+color:#ff5ca8;
+text-shadow:0 0 15px pink;
+animation:pulse 2s infinite;
+}
+
+
 
 
 
