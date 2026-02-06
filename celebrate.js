@@ -57,5 +57,6 @@ music.play().catch(()=>{});
     setTimeout(()=>{
     window.location="something.html";
 
-    },15000);
+    },30000);
+
 
