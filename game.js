@@ -84,13 +84,8 @@ let messages=[
     }
     }
 
-    const firstMusic=document.getElementById("firstMusic");
-
-    startBtn.onclick=()=>{
-    firstMusic.play().catch(()=>{});
-    };
-
     
+
 
 
 
