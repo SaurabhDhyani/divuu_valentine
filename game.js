@@ -1,3 +1,5 @@
+const firstMusic = document.getElementById("firstMusic");
+
 let messages=[
     "You are my peace 💕",
     "You make my bad days disappear 😌",
@@ -85,6 +87,7 @@ let messages=[
     }
 
     
+
 
 
 
